@@ -1,64 +1,49 @@
-import java.util.Date;
+import java.util.Random;
 import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicInteger;
 
-public class Main {
+public class Main extends Thread {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
-        //Date start = new Date();
-        Scanner scan= new Scanner(System.in);
-        // ogarnac klase statyczna generator pousuwac
+        System.out.println("Podaj długość tablicy");
+        Scanner scan = new Scanner(System.in);
+        int liczba = scan.nextInt();
+        System.out.println("Podaj ilosc tablic");
+        int iloscTablic = scan.nextInt();
+        Random generator = new Random();
+        int[] tablica;
+        tablica = new int[liczba];
+        AtomicInteger suma = new AtomicInteger();
 
 
-        System.out.println("Podaj ilosc wierszy macierzy A: ");
-        int aR = scan.nextInt();
-        System.out.println("Podaj ilosc kolumn macierzy A: ");
-        int aC = scan.nextInt();
-        System.out.println("Podaj ilosc wierszy macierzy B: ");
-        int bR = scan.nextInt();
-        System.out.println("Podaj ilosc kolumn macierzy B: ");
-        int bC = scan.nextInt();
+        Runnable r = () -> {
 
-        if (aC!=bR)
+            for (int i = 0; i < liczba; i++) {
+
+                tablica[i] = generator.nextInt(100);;
+
+
+                suma.addAndGet(tablica[i]);
+
+
+                System.out.println("suma" + suma);
+                System.out.println("Watek nr: " + Thread.currentThread().getName());
+
+            }
+
+        };
+        for (int i=0;i<iloscTablic;i++)
         {
-            System.out.println("Niewłaściwe wymiary macierzy, nie można wykonać mnożenia");
-        }
+            Thread t1 =new Thread(r);
+            t1.start();
 
-        System.out.println("Podaj macierz A \n");
-        int[][] m1 = new int[aR][aC];
-
-        for (int i = 0; i < aR; i++) {
-            for (int j = 0; j < aC; j++) {
-
-                m1[i][j] = scan.nextInt();
-            }
-        }
-
-        System.out.println("\n Podaj macierz B \n");
-        int[][] m2 = new int[bR][bC];
-
-        for (int i = 0; i < bR; i++) {
-            for (int j = 0; j < bC; j++) {
-
-                m2[i][j] = scan.nextInt();
-            }
+            if (i==iloscTablic-1)
+                Thread.sleep(1000);
+                System.out.println("koncowa suma:        "+suma);
         }
 
 
-        int[][] result= new int [aR][bC];
-        ParallelThreadsCreator.multiply(m1,m2,result);
-
-
-        System.out.println("Matrix 1 : ");
-        MatrixGeneratorUtil.print(m1);
-
-        System.out.println("\nMatrix 2 : ");
-        MatrixGeneratorUtil.print(m2);
-
-        System.out.println("\nOutput Matrix : ");
-        MatrixGeneratorUtil.print(result);
 
     }
-
-
 }
