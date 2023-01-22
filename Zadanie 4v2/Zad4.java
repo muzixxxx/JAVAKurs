@@ -1,7 +1,7 @@
 import java.util.Date;
 import java.util.Scanner;
 
-public class Main {
+public class Zad4 {
 
     public static void main(String[] args) {
 

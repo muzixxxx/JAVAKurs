@@ -1,3 +1,5 @@
+package zadanie4v1;
+
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;

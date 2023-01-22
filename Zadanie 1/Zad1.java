@@ -3,7 +3,7 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.Scanner;
 
-public class Main {
+public class Zad1 {
     public String readFile(String fileName,Person person)
     {
         Path path= Paths.get(fileName);
@@ -120,7 +120,7 @@ public class Main {
     }
     public static void main(String[] args) throws IOException {
 
-       Main main= new Main();
+       Zad1 main= new Zad1();
         Person person =new Person();
         while(true)
     {
