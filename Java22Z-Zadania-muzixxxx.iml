@@ -12,8 +12,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Zadanie 7" isTestSource="false" packagePrefix="com.mycompany.zadanie7" />
       <sourceFolder url="file://$MODULE_DIR$/Zadanie 8" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zadanie 9" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Zadanie 2" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
   </component>
 </module>
