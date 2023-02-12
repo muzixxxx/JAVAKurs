@@ -13,7 +13,18 @@
       <sourceFolder url="file://$MODULE_DIR$/Zadanie 8" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zadanie 9" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zadanie 2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/zadanie 10" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target/classes" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target/classes/com" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target/classes/zadanieJava" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target/frontend" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target/generated-sources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target/generated-test-sources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target/plugins" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target/test-classes" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/zadanie 10/target" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
