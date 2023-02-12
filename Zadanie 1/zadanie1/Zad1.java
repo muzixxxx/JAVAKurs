@@ -73,6 +73,8 @@ public class Zad1 {
         person.phone = scan.nextLine();
         System.out.println("Podaj Mail");
         person.mail = scan.nextLine();
+        person.listaKontaktow.add(person);
+
         String text;
         text=person.forename;
         text+= ";";

@@ -1,11 +1,12 @@
 package AWT;
 
 import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.ImageObserver;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.text.AttributedCharacterIterator;
 
 public class ControlsSample
 {
@@ -169,8 +170,6 @@ public class ControlsSample
             public void actionPerformed(ActionEvent e) {
                 Person person = new Person(textField.getText(),textField2.getText(),textField3.getText(),textField4.getText());
                 zad1.save(textField5.getText(),person);
-
-
 
             }
         });
