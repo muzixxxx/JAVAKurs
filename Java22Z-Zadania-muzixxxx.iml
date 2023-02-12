@@ -23,10 +23,12 @@
       <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target/generated-test-sources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target/plugins" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/zadanie 10/target/test-classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Zadanie 4v3" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/zadanie 10/target" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.25" level="project" />
   </component>
 </module>
