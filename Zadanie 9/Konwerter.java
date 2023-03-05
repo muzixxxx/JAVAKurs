@@ -19,7 +19,9 @@ public class Konwerter {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                kwota2TextField.setText(String.valueOf((Double.parseDouble(kwota1TextField.getText())*Double.parseDouble(kursTextField.getText()))));
+                kwota1= Double.parseDouble(String.valueOf((Double.parseDouble(kwota1TextField.getText()))))*1000000000;
+                kwota2TextField.setText(String.valueOf(kwota1*Double.parseDouble(kursTextField.getText())/1000000000));
+
                 kwota2TextField.setText(kwota2TextField.getText()+" "+NazwaW.getText());
 
                 JOptionPane.showMessageDialog(null,("Kwota po przeliczeniu z "+ kwota1TextField.getText()+" PLN to \n"+ kwota2TextField.getText()));

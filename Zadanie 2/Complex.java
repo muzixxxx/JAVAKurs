@@ -267,8 +267,6 @@ public class Complex<T>
                 this.imNumerator=(T) (Number)(((imfraction*((Number)this.imDenominator).doubleValue())+abs(((Number)this.imNumerator).doubleValue()))*-1);
             else
                 this.imNumerator=(T) (Number)(imfraction*((Number)this.imDenominator).doubleValue()+(abs(((Number)this.imNumerator).doubleValue())));
-
-
         }
         removePoint(complex);
 
